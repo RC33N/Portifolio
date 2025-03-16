@@ -27,7 +27,6 @@ body {
     animation: fadeIn 1s ease-in-out; /* Mantém a animação */
 }
 
-
 main {
     flex-grow: 1; /* Faz o conteúdo expandir e empurra o footer para baixo */
     display: flex;
@@ -221,6 +220,49 @@ footer {
     }
 
     .apresentacao_conteudo {
-        width: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu_links {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao {
+        margin: 5%;
+        gap: 10px;
+    }
+
+    .apresentacao_conteudo {
+        max-width: 100%;
+    }
+
+    .imagem {
+        max-width: 100%;
+    }
+
+    .botoes_links {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .apresentacao_links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes-sociais {
+        gap: 16px;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 16px;
     }
 }
